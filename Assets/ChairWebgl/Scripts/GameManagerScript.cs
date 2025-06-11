@@ -7,6 +7,8 @@ public class GameManagerScript : MonoBehaviour
     [SerializeField] public Camera Cam;
     [SerializeField] public GameObject[] Objs;
     [SerializeField] public Button[] UIButtons;
+    [SerializeField] public GameObject[] BGObjs;
+    [SerializeField] public Button[] UIButtonsBG;
     int count;
 
     private void Start()
@@ -16,15 +18,28 @@ public class GameManagerScript : MonoBehaviour
         {
             Objs[i].SetActive(false);
         }
+
+        for (int i = 0; i < BGObjs.Length; i++)
+        {
+            BGObjs[i].SetActive(false);
+        }
+
         for (int i = 0; i < UIButtons.Length; i++)
         {
             UIButtons[i].interactable = false;
         }
         UIButtons[0].interactable = true;
+
+        for (int i = 0; i < UIButtonsBG.Length; i++)
+        {
+            UIButtonsBG[i].interactable = false;
+        }
+        UIButtonsBG[0].interactable = true;
         Objs[0].SetActive(true);
+        BGObjs[0].SetActive(true);
     }
 
-    public void Next()
+    public void NextObj()
     {
         if (count < 3)
         {
@@ -41,7 +56,7 @@ public class GameManagerScript : MonoBehaviour
         }
     }
 
-    public void Previous()
+    public void PreviousObj()
     {
         if (count > 0)
         {
@@ -57,4 +72,22 @@ public class GameManagerScript : MonoBehaviour
             }
         }
     }
+
+    public void NextBG()
+    {
+        UIButtonsBG[0].interactable = false;
+        UIButtonsBG[1].interactable = true;
+        BGObjs[0].SetActive(false);
+        BGObjs[1].SetActive(true);
+    }
+
+    public void PreviousBG()
+    {
+        UIButtonsBG[1].interactable = false;
+        UIButtonsBG[0].interactable = true;
+        BGObjs[1].SetActive(false);
+        BGObjs[0].SetActive(true);
+    }
+
+
 }
