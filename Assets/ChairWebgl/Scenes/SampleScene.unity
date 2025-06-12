@@ -1170,7 +1170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.83396226, g: 0.83396226, b: 0.83396226, a: 0.39215687}
+  m_Color: {r: 0.83396226, g: 0.83396226, b: 0.83396226, a: 0.87058824}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1793,7 +1793,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: ae243dd8a04991d429d4ab780a55bd63, type: 3}
+  - {fileID: 2100000, guid: e605a166cc5489c44a564dd5b9a2bbae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3246,6 +3246,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: -4431144320272763597, guid: ae243dd8a04991d429d4ab780a55bd63, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ffe7ca39b86bfe146971bf45ec944e1c, type: 2}
+    - target: {fileID: -4431144320272763597, guid: ae243dd8a04991d429d4ab780a55bd63, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ffe7ca39b86bfe146971bf45ec944e1c, type: 2}
     - target: {fileID: -4353687763010419508, guid: ae243dd8a04991d429d4ab780a55bd63, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -3494,6 +3502,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 7968239107929227488, guid: ae243dd8a04991d429d4ab780a55bd63, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e605a166cc5489c44a564dd5b9a2bbae, type: 2}
     - target: {fileID: 8156302632769205659, guid: ae243dd8a04991d429d4ab780a55bd63, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -4272,6 +4284,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6960108649898049992, guid: dc5494970ea726d4082f11cade0a2464, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -6830665436716844153, guid: dc5494970ea726d4082f11cade0a2464, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -4543,7 +4559,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: ae243dd8a04991d429d4ab780a55bd63, type: 3}
+  - {fileID: 2100000, guid: e605a166cc5489c44a564dd5b9a2bbae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5476,7 +5492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.83396226, g: 0.83396226, b: 0.83396226, a: 0.39215687}
+  m_Color: {r: 0.83396226, g: 0.83396226, b: 0.83396226, a: 0.87058824}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5557,8 +5573,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2650664218006285534, guid: ae243dd8a04991d429d4ab780a55bd63, type: 3}
-  - {fileID: 1074566072414502976, guid: ae243dd8a04991d429d4ab780a55bd63, type: 3}
+  - {fileID: 2100000, guid: ffe7ca39b86bfe146971bf45ec944e1c, type: 2}
+  - {fileID: 2100000, guid: ffe7ca39b86bfe146971bf45ec944e1c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6979,8 +6995,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fab45cc08ab7a3249a3d8959947f724c, type: 2}
-  - {fileID: 1074566072414502976, guid: ae243dd8a04991d429d4ab780a55bd63, type: 3}
+  - {fileID: 2100000, guid: ffe7ca39b86bfe146971bf45ec944e1c, type: 2}
+  - {fileID: 2100000, guid: ffe7ca39b86bfe146971bf45ec944e1c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
