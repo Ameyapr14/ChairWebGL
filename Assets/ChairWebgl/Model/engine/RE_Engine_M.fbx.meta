@@ -3,7 +3,37 @@ guid: 6d4d2e878a9867341a9314349c12067d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_Rubber
+    second: {fileID: 2100000, guid: c06a4beaf388a8d44bb0216e3e06aa7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_metal
+    second: {fileID: 2100000, guid: 40e1592c3af1b7440babac2b09e89e97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_plastic
+    second: {fileID: 2100000, guid: cbb54195c1b7450498548274fb422f9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chrome
+    second: {fileID: 2100000, guid: d4de8d7275e804841960aae6aec266f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Engine_Aluminium
+    second: {fileID: 2100000, guid: 1c22b52053d25084dbde26cf46047ad9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert5
+    second: {fileID: 2100000, guid: 26cfd2216a0cc3e41904690dbdce0636, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
