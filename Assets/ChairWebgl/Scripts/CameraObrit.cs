@@ -116,7 +116,7 @@ public class CameraOrbit : MonoBehaviour
 
         //   ******************************************************************************************
 
-        if (target == null) return;
+       /* if (target == null) return;
 
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");
 
@@ -146,6 +146,6 @@ public class CameraOrbit : MonoBehaviour
             float v = -Input.GetAxis("Mouse Y") * zoomSpeed * Time.deltaTime;
 
             transform.Translate(new Vector3(h, v, 0));
-        }
+        }*/
     }
 }
