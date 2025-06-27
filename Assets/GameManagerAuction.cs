@@ -7,7 +7,6 @@ public class GameManagerAuction : MonoBehaviour
     [SerializeField] private GameObject[] ItemSelection;
     [SerializeField] private GameObject[] InfoButtons;
     [SerializeField] private GameObject[] InfoPanels;
-    [SerializeField] private StarterAssetsInputs CursorInput;
     [SerializeField] private GameObject[] ArtifactPos;
     [SerializeField] private string url = "https://www.youtube.com/watch?v=6WzU6jmXNIY";
 
@@ -23,8 +22,6 @@ public class GameManagerAuction : MonoBehaviour
             InfoButtons[i].SetActive(true);
             InfoPanels[i].SetActive(false);
         }
-        CursorInput.cursorInputForLook = true;
-        ItemSelection[0].SetActive(true);
     }
 
     public void ItemSelected(int no)
@@ -78,16 +75,6 @@ public class GameManagerAuction : MonoBehaviour
             InfoButtons[i].SetActive(true);
             InfoPanels[i].SetActive(false);
         }
-    }
-
-    public void CursorInputOn()
-    {
-        CursorInput.cursorInputForLook = true;
-    }
-
-    public void CursorInputOFF()
-    {
-        CursorInput.cursorInputForLook = false;
     }
 
     public void OnClick()
