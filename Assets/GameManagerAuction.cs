@@ -34,6 +34,7 @@ public class GameManagerAuction : MonoBehaviour
             ButtonsOff[i].SetActive(false);
             ButtonsOn[i].SetActive(true);
         }
+       
     }
     public void ResetPossqaure()
     {
@@ -108,40 +109,48 @@ public class GameManagerAuction : MonoBehaviour
         }
     }*/
 
+   
+        
+ 
 
     public void RoomSelection(int num)
     {
-        PlayerScript.enabled = false;
-        if (num == 0)
-        {
-            playerPos.transform.localPosition = new Vector3(1.838f,1.08f, 0.2372f);
-            playerPos.transform.rotation = Quaternion.Euler(0, -270.6f, 0);
-        }
-        else if (num == 1)
-        {
-            playerPos.transform.localPosition = new Vector3(3.22f, 1.08f, -0.0408675f);
-            playerPos.transform.rotation = Quaternion.Euler(0, -449.9f, 0);
-        }
-        else if (num == 2)
-        {
-            playerPos.transform.localPosition = new Vector3(-0.377f, 1.08f, -10.767f);
-            playerPos.transform.rotation = Quaternion.Euler(0, -449.9f, 0);
-        }
-        else if (num == 3)
-        {
-            playerPos.transform.localPosition = new Vector3(0.5959f, 1.08f, 10.815f);
-            playerPos.transform.rotation = Quaternion.Euler(0, -270.3f, 0);
-        }
-        else if (num == 4)
-        {
-            playerPos.transform.localPosition = new Vector3(-7.533f, 1.08f, 0.319f);
-            playerPos.transform.rotation = Quaternion.Euler(0, -358, 0);
-        }
-        else if (num == 5)
-        {
-            playerPos.transform.localPosition = new Vector3(7.63f, 1.08f, 0.161f);
-            playerPos.transform.rotation = Quaternion.Euler(0, -360, 0);
-        }
+            if (num == 0)
+            {
+
+                playerPos.transform.localPosition = new Vector3(1.838f, 1.08f, 0.2372f);
+                playerPos.transform.rotation = Quaternion.Euler(0, -270.6f, 0);
+            }
+            else if (num == 1)
+            {
+
+                playerPos.transform.localPosition = new Vector3(3.22f, 1.08f, -0.0408675f);
+                playerPos.transform.rotation = Quaternion.Euler(0, -449.9f, 0);
+            }
+            else if (num == 2)
+            {
+
+                playerPos.transform.localPosition = new Vector3(-0.377f, 1.08f, -10.767f);
+                playerPos.transform.rotation = Quaternion.Euler(0, -449.9f, 0);
+            }
+            else if (num == 3)
+            {
+
+                playerPos.transform.localPosition = new Vector3(0.5959f, 1.08f, 10.815f);
+                playerPos.transform.rotation = Quaternion.Euler(0, -270.3f, 0);
+            }
+            else if (num == 4)
+            {
+
+                playerPos.transform.localPosition = new Vector3(-7.533f, 1.08f, 0.319f);
+                playerPos.transform.rotation = Quaternion.Euler(0, -358, 0);
+            }
+            else if (num == 5)
+            {
+
+                playerPos.transform.localPosition = new Vector3(7.63f, 1.08f, 0.161f);
+                playerPos.transform.rotation = Quaternion.Euler(0, -360, 0);
+            }
         PlayerScript.enabled = true;
     }
 
