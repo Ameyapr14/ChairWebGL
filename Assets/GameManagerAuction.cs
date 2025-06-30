@@ -151,6 +151,12 @@ public class GameManagerAuction : MonoBehaviour
                 playerPos.transform.localPosition = new Vector3(7.63f, 1.08f, 0.161f);
                 playerPos.transform.rotation = Quaternion.Euler(0, -360, 0);
             }
+        else if (num == 6)
+            {
+
+                playerPos.transform.localPosition = new Vector3(7.4875f, 1.08f, -0.1984f);
+                playerPos.transform.rotation = Quaternion.Euler(0, -269, 0);
+            }
         PlayerScript.enabled = true;
     }
 
@@ -204,6 +210,66 @@ public class GameManagerAuction : MonoBehaviour
             ButtonsOff[num].SetActive(true);
             ButtonsOn[num].SetActive(false);
         }
+        else if (num == 8)
+        {
+            Info[num].SetActive(true);
+            ButtonsOff[num].SetActive(true);
+            ButtonsOn[num].SetActive(false);
+        }
+        else if (num == 9)
+        {
+            Info[num].SetActive(true);
+            ButtonsOff[num].SetActive(true);
+            ButtonsOn[num].SetActive(false);
+        }
+        else if (num == 10)
+        {
+            Info[num].SetActive(true);
+            ButtonsOff[num].SetActive(true);
+            ButtonsOn[num].SetActive(false);
+        }
+        else if (num == 11)
+        {
+            Info[num].SetActive(true);
+            ButtonsOff[num].SetActive(true);
+            ButtonsOn[num].SetActive(false);
+        }
+        else if (num == 12)
+        {
+            Info[num].SetActive(true);
+            ButtonsOff[num].SetActive(true);
+            ButtonsOn[num].SetActive(false);
+        }
+        else if (num == 13)
+        {
+            Info[num].SetActive(true);
+            ButtonsOff[num].SetActive(true);
+            ButtonsOn[num].SetActive(false);
+        }
+        else if (num == 14)
+        {
+            Info[num].SetActive(true);
+            ButtonsOff[num].SetActive(true);
+            ButtonsOn[num].SetActive(false);
+        }
+        else if (num == 15)
+        {
+            Info[num].SetActive(true);
+            ButtonsOff[num].SetActive(true);
+            ButtonsOn[num].SetActive(false);
+        }
+        else if (num == 16)
+        {
+            Info[num].SetActive(true);
+            ButtonsOff[num].SetActive(true);
+            ButtonsOn[num].SetActive(false);
+        }
+        else if (num == 17)
+        {
+            Info[num].SetActive(true);
+            ButtonsOff[num].SetActive(true);
+            ButtonsOn[num].SetActive(false);
+        }
     }
 
     public void ClosePressed(int num)
@@ -251,6 +317,66 @@ public class GameManagerAuction : MonoBehaviour
             ButtonsOn[num].SetActive(true);
         }
         else if (num == 7)
+        {
+            Info[num].SetActive(false);
+            ButtonsOff[num].SetActive(false);
+            ButtonsOn[num].SetActive(true);
+        }
+        else if (num == 8)
+        {
+            Info[num].SetActive(false);
+            ButtonsOff[num].SetActive(false);
+            ButtonsOn[num].SetActive(true);
+        }
+        else if (num == 9)
+        {
+            Info[num].SetActive(false);
+            ButtonsOff[num].SetActive(false);
+            ButtonsOn[num].SetActive(true);
+        }
+        else if (num == 10)
+        {
+            Info[num].SetActive(false);
+            ButtonsOff[num].SetActive(false);
+            ButtonsOn[num].SetActive(true);
+        }
+        else if (num == 11)
+        {
+            Info[num].SetActive(false);
+            ButtonsOff[num].SetActive(false);
+            ButtonsOn[num].SetActive(true);
+        }
+        else if (num == 12)
+        {
+            Info[num].SetActive(false);
+            ButtonsOff[num].SetActive(false);
+            ButtonsOn[num].SetActive(true);
+        }
+        else if (num == 13)
+        {
+            Info[num].SetActive(false);
+            ButtonsOff[num].SetActive(false);
+            ButtonsOn[num].SetActive(true);
+        }
+        else if (num == 14)
+        {
+            Info[num].SetActive(false);
+            ButtonsOff[num].SetActive(false);
+            ButtonsOn[num].SetActive(true);
+        }
+        else if (num == 15)
+        {
+            Info[num].SetActive(false);
+            ButtonsOff[num].SetActive(false);
+            ButtonsOn[num].SetActive(true);
+        }
+        else if (num == 16)
+        {
+            Info[num].SetActive(false);
+            ButtonsOff[num].SetActive(false);
+            ButtonsOn[num].SetActive(true);
+        }
+        else if (num == 17)
         {
             Info[num].SetActive(false);
             ButtonsOff[num].SetActive(false);
