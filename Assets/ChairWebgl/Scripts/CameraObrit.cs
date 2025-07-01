@@ -3,58 +3,11 @@ using UnityEngine.EventSystems;
 
 public class CameraOrbit : MonoBehaviour
 {
-    /* public Transform target;          // Object to orbit around
-     public float distance = 5.0f;     // Distance from the target
-     public float xSpeed = 120.0f;     // Mouse horizontal speed
-     public float ySpeed = 120.0f;     // Mouse vertical speed
-
-     public float yMinLimit = -20f;    // Vertical angle limits
-     public float yMaxLimit = 80f;
-
-     private float x = 0.0f;           // Current horizontal angle
-     private float y = 0.0f;           // Current vertical angle
-
-     void Start()
-     {
-         Vector3 angles = transform.eulerAngles;
-         x = angles.y;
-         y = angles.x;
-
-         // Optional: lock the cursor to the game window
-        *//* Cursor.lockState = CursorLockMode.Locked;
-         Cursor.visible = false;*//*
-     }
-
-     void Update()
-     {
-         if (target)
-         {
-             // Get mouse input
-             x += Input.GetAxis("Mouse X") * xSpeed * Time.deltaTime;
-             y -= Input.GetAxis("Mouse Y") * ySpeed * Time.deltaTime;
-
-             // Clamp vertical rotation
-             y = Mathf.Clamp(y, yMinLimit, yMaxLimit);
-
-             // Calculate rotation
-             Quaternion rotation = Quaternion.Euler(y, x, 0);
-
-             // Calculate position
-             Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
-             Vector3 position = rotation * negDistance + target.position;
-
-             // Apply rotation and position
-             transform.rotation = rotation;
-             transform.position = position;
-         }
-     }*/
-
     public Transform target; // The target to follow
     public float rotationSpeed = 5.0f;
     public float zoomSpeed = 10.0f;
-    public float minZoom = 5.0f;
-    public float maxZoom = 15.0f;
-    public LayerMask zoomColliderMask;
+    public float minScale = 5.0f;
+    public float maxScale = 15.0f;
     private float currentZoom = 10.0f;
 
     private void Update()
@@ -83,60 +36,20 @@ public class CameraOrbit : MonoBehaviour
                  transform.position = newPosition;
              }*//*
          }*/
-        /*    float scrollInput = Input.GetAxis("Mouse ScrollWheel");
-            if (scrollInput != 0)
-            {
-                // Calculate the new scale factor
-                float scaleFactor = 1 + scrollInput * zoomSpeed;
-                Vector3 newScale = transform.localScale * scaleFactor;
-
-                // Clamp the new scale to ensure it stays within the min and max limits
-                newScale.x = Mathf.Clamp(newScale.x, minScale, maxScale);
-                newScale.y = Mathf.Clamp(newScale.y, minScale, maxScale);
-                newScale.z = Mathf.Clamp(newScale.z, minScale, maxScale);
-
-                // Apply the clamped scale
-                transform.localScale = newScale;
-            }*/
-        //   ******************************************************************************************
-
-        /*  if (target == null) return;
-
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");
-
-        if (Mathf.Abs(scrollInput) > 0.01f)
+        if (scrollInput != 0)
         {
-            Vector3 direction = (transform.position - target.position).normalized;
-            float distance = Vector3.Distance(transform.position, target.position);
+            // Calculate the new scale factor
+            float scaleFactor = 1 + scrollInput * zoomSpeed;
+            Vector3 newScale = transform.localScale * scaleFactor;
 
-            float newDistance = Mathf.Clamp(distance - scrollInput * zoomSpeed, minZoom, maxZoom);
-            transform.position = target.position + direction * newDistance;
-        }*/
+            // Clamp the new scale to ensure it stays within the min and max limits
+            newScale.x = Mathf.Clamp(newScale.x, minScale, maxScale);
+            newScale.y = Mathf.Clamp(newScale.y, minScale, maxScale);
+            newScale.z = Mathf.Clamp(newScale.z, minScale, maxScale);
 
-
-        //   ******************************************************************************************
-
-       /* if (target == null) return;
-
-        float scrollInput = Input.GetAxis("Mouse ScrollWheel");
-
-        if (Mathf.Abs(scrollInput) > 0.01f)
-        {
-            Vector3 dir = (transform.position - target.position).normalized;
-            float distance = Vector3.Distance(transform.position, target.position);
-
-            // Cast a ray from target to camera
-            Ray ray = new Ray(target.position, dir);
-            float minZoomDistance = 0.5f; // fallback value
-
-            if (Physics.Raycast(ray, out RaycastHit hit, distance + 5f, zoomColliderMask))
-            {
-                // Use hit distance as minimum zoom
-                minZoomDistance = hit.distance + 0.2f; // small buffer
-            }
-
-            float newDistance = Mathf.Clamp(distance - scrollInput * zoomSpeed, minZoomDistance, maxZoom);
-            transform.position = target.position + dir * newDistance;
+            // Apply the clamped scale
+            transform.localScale = newScale;
         }
 
         // Pan camera
@@ -146,6 +59,6 @@ public class CameraOrbit : MonoBehaviour
             float v = -Input.GetAxis("Mouse Y") * zoomSpeed * Time.deltaTime;
 
             transform.Translate(new Vector3(h, v, 0));
-        }*/
+        }
     }
 }

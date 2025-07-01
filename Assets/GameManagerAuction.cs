@@ -2,9 +2,11 @@ using StarterAssets;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class GameManagerAuction : MonoBehaviour
 {
+
     /* [SerializeField] private GameObject[] ItemSelection;
      [SerializeField] private GameObject[] InfoButtons;
      [SerializeField] private GameObject[] InfoPanels;
@@ -16,6 +18,15 @@ public class GameManagerAuction : MonoBehaviour
     [SerializeField] public GameObject[] ButtonsOff;
     [SerializeField] public PlaermovmentScript PlayerScript;
     [SerializeField] public GameObject Square;
+    [SerializeField] public bool Chair, Bag;
+
+  
+
+    public void TriggerSceneLoad()
+    {
+        
+        SceneManager.LoadScene("3DView");
+    }
 
     private void Start()
     {
@@ -29,6 +40,9 @@ public class GameManagerAuction : MonoBehaviour
              InfoButtons[i].SetActive(true);
              InfoPanels[i].SetActive(false);
          }*/
+        Chair = false;
+        Bag = false;
+     
         for (int i = 0; i < Info.Length; i++)
         {
             Info[i].SetActive(false);
@@ -37,6 +51,7 @@ public class GameManagerAuction : MonoBehaviour
         }
        
     }
+
     public void ResetPossqaure()
     {
         Square.transform.localPosition = new Vector3(-0.03f, -0.01f, 1.04f);
@@ -162,6 +177,12 @@ public class GameManagerAuction : MonoBehaviour
                 playerPos.transform.localPosition = new Vector3(7.4875f, 1.08f, -0.1984f);
                 playerPos.transform.rotation = Quaternion.Euler(0, -269, 0);
             }
+            else if (num == 7)
+            {
+
+            playerPos.transform.localPosition = new Vector3(-0.6348447f, 1.08f, 10.80834f);
+            playerPos.transform.rotation = Quaternion.Euler(0, -360, 0);
+        }
 
         StartCoroutine(SatrtDelay());
        
@@ -395,5 +416,16 @@ public class GameManagerAuction : MonoBehaviour
             ButtonsOff[num].SetActive(false);
             ButtonsOn[num].SetActive(true);
         }
+    }
+
+    public void ChairBooleanPressed()
+    {
+        Chair=true;
+
+    }
+
+    public void BagBooleanPressed()
+    {
+        Bag = true;
     }
 }
