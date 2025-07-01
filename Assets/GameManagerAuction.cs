@@ -1,4 +1,5 @@
 using StarterAssets;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -118,7 +119,8 @@ public class GameManagerAuction : MonoBehaviour
 
     public void RoomSelection(int num)
     {
-            if (num == 0)
+        PlayerScript.enabled = false;
+        if (num == 0)
             {
 
                 playerPos.transform.localPosition = new Vector3(1.838f, 1.08f, 0.2372f);
@@ -154,12 +156,20 @@ public class GameManagerAuction : MonoBehaviour
                 playerPos.transform.localPosition = new Vector3(7.63f, 1.08f, 0.161f);
                 playerPos.transform.rotation = Quaternion.Euler(0, -360, 0);
             }
-        else if (num == 6)
+            else if (num == 6)
             {
 
                 playerPos.transform.localPosition = new Vector3(7.4875f, 1.08f, -0.1984f);
                 playerPos.transform.rotation = Quaternion.Euler(0, -269, 0);
             }
+
+        StartCoroutine(SatrtDelay());
+       
+    }
+
+    IEnumerator SatrtDelay()
+    {
+        yield return new WaitForSeconds(1.2f);
         PlayerScript.enabled = true;
     }
 
