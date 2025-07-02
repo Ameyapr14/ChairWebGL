@@ -18,14 +18,20 @@ public class GameManagerAuction : MonoBehaviour
     [SerializeField] public GameObject[] ButtonsOff;
     [SerializeField] public PlaermovmentScript PlayerScript;
     [SerializeField] public GameObject Square;
+    [SerializeField] public Camera Camera;
     [SerializeField] public bool Chair, Bag;
-
+    [SerializeField] 
   
 
     public void TriggerSceneLoad()
     {
         
         SceneManager.LoadScene("3DView");
+    }
+    public void TriggerSceneFrameLoad()
+    {
+
+        SceneManager.LoadScene("3DViewFrame");
     }
 
     private void Start()
@@ -135,54 +141,56 @@ public class GameManagerAuction : MonoBehaviour
     public void RoomSelection(int num)
     {
         PlayerScript.enabled = false;
-        if (num == 0)
+            if (num == 0)
             {
-
+                 
                 playerPos.transform.localPosition = new Vector3(1.838f, 1.08f, 0.2372f);
                 playerPos.transform.rotation = Quaternion.Euler(0, -270.6f, 0);
             }
             else if (num == 1)
             {
-
+                                      
                 playerPos.transform.localPosition = new Vector3(3.22f, 1.08f, -0.0408675f);
                 playerPos.transform.rotation = Quaternion.Euler(0, -449.9f, 0);
             }
             else if (num == 2)
             {
-
+                 
                 playerPos.transform.localPosition = new Vector3(-0.377f, 1.08f, -10.767f);
                 playerPos.transform.rotation = Quaternion.Euler(0, -449.9f, 0);
             }
             else if (num == 3)
             {
-
-                playerPos.transform.localPosition = new Vector3(0.5959f, 1.08f, 10.815f);
+                    
+                 playerPos.transform.localPosition = new Vector3(0.5959f, 1.08f, 10.815f);
                 playerPos.transform.rotation = Quaternion.Euler(0, -270.3f, 0);
             }
             else if (num == 4)
             {
-
+               
                 playerPos.transform.localPosition = new Vector3(-7.533f, 1.08f, 0.319f);
                 playerPos.transform.rotation = Quaternion.Euler(0, -358, 0);
             }
             else if (num == 5)
             {
-
+                
                 playerPos.transform.localPosition = new Vector3(7.63f, 1.08f, 0.161f);
                 playerPos.transform.rotation = Quaternion.Euler(0, -360, 0);
             }
             else if (num == 6)
             {
-
-                playerPos.transform.localPosition = new Vector3(7.4875f, 1.08f, -0.1984f);
-                playerPos.transform.rotation = Quaternion.Euler(0, -269, 0);
+                
+                playerPos.transform.localPosition = new Vector3(8.095207f, 1.08f, -0.1599064f);
+                playerPos.transform.rotation = Quaternion.Euler(0, -270, 0);
+                
             }
             else if (num == 7)
             {
-
-            playerPos.transform.localPosition = new Vector3(-0.6348447f, 1.08f, 10.80834f);
-            playerPos.transform.rotation = Quaternion.Euler(0, -360, 0);
-        }
+                
+                playerPos.transform.localPosition = new Vector3(-0.558396f, 1.08f, 11.49494f);
+             playerPos.transform.rotation = Quaternion.Euler(0, -360, 0);
+            
+            }
 
         StartCoroutine(SatrtDelay());
        
