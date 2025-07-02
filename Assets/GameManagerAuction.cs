@@ -134,7 +134,7 @@ public class GameManagerAuction : MonoBehaviour
 
     public void OnClick()
     {
-        Application.OpenURL("https://www.youtube.com/watch?v=6WzU6jmXNIY");
+        Application.OpenURL("https://onlineonly.christies.com/s/collections-including-orange-blossom-collection-works-centuries-taste/george-iii-mahogany-bergere-238/253185?ldp_breadcrumb=back");
     }
 
 
@@ -144,8 +144,8 @@ public class GameManagerAuction : MonoBehaviour
             if (num == 0)
             {
                  
-                playerPos.transform.localPosition = new Vector3(1.838f, 1.08f, 0.2372f);
-                playerPos.transform.rotation = Quaternion.Euler(0, -270.6f, 0);
+                playerPos.transform.localPosition = new Vector3(-3.898942f, 1.08f, -7.075891f);
+                playerPos.transform.rotation = Quaternion.Euler(0, -320.2f, 0);
             }
             else if (num == 1)
             {
