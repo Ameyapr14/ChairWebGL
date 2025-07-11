@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManagerAuction : MonoBehaviour
 {
+    public static GameManagerAuction Instance { get; private set; }
 
     /* [SerializeField] private GameObject[] ItemSelection;
      [SerializeField] private GameObject[] InfoButtons;
@@ -20,9 +21,20 @@ public class GameManagerAuction : MonoBehaviour
     [SerializeField] public GameObject Square;
     [SerializeField] public Camera Camera;
     [SerializeField] public bool Chair, Bag;
-    [SerializeField] 
-  
+    [SerializeField] public int RefNum;
 
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
     public void TriggerSceneLoad()
     {
         
@@ -203,120 +215,132 @@ public class GameManagerAuction : MonoBehaviour
     }
 
     public void InfoPressed(int num)
-    {
-        if (num == 0)
+    {    if (num == num)
         {
             Info[num].SetActive(true);
             ButtonsOff[num].SetActive(true);
             ButtonsOn[num].SetActive(false);
         }
-        else if(num == 1)
-        {
-            Info[num].SetActive(true);
-            ButtonsOff[num].SetActive(true);
-            ButtonsOn[num].SetActive(false);
-        }
-        else if (num == 2)
-        {
-            Info[num].SetActive(true);
-            ButtonsOff[num].SetActive(true);
-            ButtonsOn[num].SetActive(false);
-        }
-        else if (num == 3)
-        {
-            Info[num].SetActive(true);
-            ButtonsOff[num].SetActive(true);
-            ButtonsOn[num].SetActive(false);
-        }
-        else if (num == 4)
-        {
-            Info[num].SetActive(true);
-            ButtonsOff[num].SetActive(true);
-            ButtonsOn[num].SetActive(false);
-        }
-        else if (num == 5)
-        {
-            Info[num].SetActive(true);
-            ButtonsOff[num].SetActive(true);
-            ButtonsOn[num].SetActive(false);
-        }
-        else if (num == 6)
-        {
-            Info[num].SetActive(true);
-            ButtonsOff[num].SetActive(true);
-            ButtonsOn[num].SetActive(false);
-        }
-        else if (num == 7)
-        {
-            Info[num].SetActive(true);
-            ButtonsOff[num].SetActive(true);
-            ButtonsOn[num].SetActive(false);
-        }
-        else if (num == 8)
-        {
-            Info[num].SetActive(true);
-            ButtonsOff[num].SetActive(true);
-            ButtonsOn[num].SetActive(false);
-        }
-        else if (num == 9)
-        {
-            Info[num].SetActive(true);
-            ButtonsOff[num].SetActive(true);
-            ButtonsOn[num].SetActive(false);
-        }
-        else if (num == 10)
-        {
-            Info[num].SetActive(true);
-            ButtonsOff[num].SetActive(true);
-            ButtonsOn[num].SetActive(false);
-        }
-        else if (num == 11)
-        {
-            Info[num].SetActive(true);
-            ButtonsOff[num].SetActive(true);
-            ButtonsOn[num].SetActive(false);
-        }
-        else if (num == 12)
-        {
-            Info[num].SetActive(true);
-            ButtonsOff[num].SetActive(true);
-            ButtonsOn[num].SetActive(false);
-        }
-        else if (num == 13)
-        {
-            Info[num].SetActive(true);
-            ButtonsOff[num].SetActive(true);
-            ButtonsOn[num].SetActive(false);
-        }
-        else if (num == 14)
-        {
-            Info[num].SetActive(true);
-            ButtonsOff[num].SetActive(true);
-            ButtonsOn[num].SetActive(false);
-        }
-        else if (num == 15)
-        {
-            Info[num].SetActive(true);
-            ButtonsOff[num].SetActive(true);
-            ButtonsOn[num].SetActive(false);
-        }
-        else if (num == 16)
-        {
-            Info[num].SetActive(true);
-            ButtonsOff[num].SetActive(true);
-            ButtonsOn[num].SetActive(false);
-        }
-        else if (num == 17)
-        {
-            Info[num].SetActive(true);
-            ButtonsOff[num].SetActive(true);
-            ButtonsOn[num].SetActive(false);
-        }
+        /* if (num == 0)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }
+         else if(num == 1)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }
+         else if (num == 2)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }
+         else if (num == 3)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }
+         else if (num == 4)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }
+         else if (num == 5)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }
+         else if (num == 6)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }
+         else if (num == 7)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }
+         else if (num == 8)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }
+         else if (num == 9)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }
+         else if (num == 10)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }
+         else if (num == 11)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }
+         else if (num == 12)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }
+         else if (num == 13)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }
+         else if (num == 14)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }
+         else if (num == 15)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }
+         else if (num == 16)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }
+         else if (num == 17)
+         {
+             Info[num].SetActive(true);
+             ButtonsOff[num].SetActive(true);
+             ButtonsOn[num].SetActive(false);
+         }*/
+
     }
 
     public void ClosePressed(int num)
     {
-        if (num == 0)
+        if (num == num)
+        {
+            Info[num].SetActive(false);
+            ButtonsOff[num].SetActive(false);
+            ButtonsOn[num].SetActive(true);
+        }
+        /*if (num == 0)
         {
             Info[num].SetActive(false);
             ButtonsOff[num].SetActive(false);
@@ -423,17 +447,11 @@ public class GameManagerAuction : MonoBehaviour
             Info[num].SetActive(false);
             ButtonsOff[num].SetActive(false);
             ButtonsOn[num].SetActive(true);
-        }
+        }*/
     }
 
-    public void ChairBooleanPressed()
+   public void ViewPressed(int num)
     {
-        Chair=true;
-
-    }
-
-    public void BagBooleanPressed()
-    {
-        Bag = true;
+        RefNum = num;
     }
 }
