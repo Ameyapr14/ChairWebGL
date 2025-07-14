@@ -1,17 +1,27 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManeger3D : MonoBehaviour
 {
     public bool backpressed;
-    [SerializeField] public Vector3 lastpos;
+  
     [SerializeField] public GameObject[] ViewModels;
     [SerializeField] public CameraOrbit Cam;
+    public int count;
 
-    private void Start()
+    void OnEnable()
+    {
+       
+        RefreshCount();
+        CheckNum();
+    }
+
+    void RefreshCount()
     {
         backpressed = false;
-        CheckNum();
+        count = ReferenceNum.Instance.itemNum;
+        Debug.Log("RefNum now = " + count);
     }
 
     public void CheckNum()
@@ -20,14 +30,14 @@ public class GameManeger3D : MonoBehaviour
         {
             ViewModels[i].SetActive(false);
         }
-        ViewModels[GameManagerAuction.Instance.RefNum].SetActive(true);
-        Cam.target = ViewModels[GameManagerAuction.Instance.RefNum].transform;
+       ViewModels[count].SetActive(true);
+        Cam.target = ViewModels[count].transform;
     }
 
 
     public void PreviousSceneLoad()
     {
-        SceneManager.LoadScene("Chairwebgl");
         backpressed = true;
+        SceneManager.LoadScene("Chairwebgl");
     }
 }

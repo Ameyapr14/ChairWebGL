@@ -1,13 +1,13 @@
 using StarterAssets;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManagerAuction : MonoBehaviour
-{
-    public static GameManagerAuction Instance { get; private set; }
-
+{ 
     /* [SerializeField] private GameObject[] ItemSelection;
      [SerializeField] private GameObject[] InfoButtons;
      [SerializeField] private GameObject[] InfoPanels;
@@ -21,23 +21,11 @@ public class GameManagerAuction : MonoBehaviour
     [SerializeField] public GameObject Square;
     [SerializeField] public Camera Camera;
     [SerializeField] public bool Chair, Bag;
-    [SerializeField] public int RefNum;
-
-    void Awake()
+    public int itemNumref;
+    
+    public void TriggerSceneLoad(int num)
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else if (Instance != this)
-        {
-            Destroy(gameObject);
-        }
-    }
-    public void TriggerSceneLoad()
-    {
-        
+        ReferenceNum.Instance.itemNum = num ;
         SceneManager.LoadScene("3DView");
     }
     public void TriggerSceneFrameLoad()
@@ -450,8 +438,5 @@ public class GameManagerAuction : MonoBehaviour
         }*/
     }
 
-   public void ViewPressed(int num)
-    {
-        RefNum = num;
-    }
+ 
 }

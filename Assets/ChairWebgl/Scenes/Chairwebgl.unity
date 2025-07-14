@@ -290,18 +290,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3652,18 +3640,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4627,18 +4603,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8980,7 +8944,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 425995127}
-  - component: {fileID: 425995126}
+  - component: {fileID: 425995128}
   m_Layer: 0
   m_Name: ReferenceCreation
   m_TagString: Untagged
@@ -8988,18 +8952,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &425995126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 425995125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6f67f0e9d64f884c96475f50b52d2a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &425995127
 Transform:
   m_ObjectHideFlags: 0
@@ -9015,6 +8967,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &425995128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425995125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5731ed8792d9b224cb27cc3f0a8f3d5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RefNum: 0
+  itemNum: 0
 --- !u!1 &431304748
 GameObject:
   m_ObjectHideFlags: 0
@@ -10488,18 +10454,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12879,18 +12833,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13643,18 +13585,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18541,18 +18471,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21016,18 +20934,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21337,18 +21243,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21857,18 +21751,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24828,7 +24710,7 @@ MonoBehaviour:
   Camera: {fileID: 330585545}
   Chair: 0
   Bag: 0
-  RefNum: 0
+  itemNumref: 0
 --- !u!1 &1222514222
 GameObject:
   m_ObjectHideFlags: 0
@@ -27047,18 +26929,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29259,18 +29129,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29403,18 +29261,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -33751,18 +33597,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36832,18 +36666,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37738,18 +37560,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -42938,18 +42748,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -43214,18 +43012,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1221032708}
         m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
         m_MethodName: TriggerSceneLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1221032708}
-        m_TargetAssemblyTypeName: GameManagerAuction, Assembly-CSharp
-        m_MethodName: ViewPressed
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
