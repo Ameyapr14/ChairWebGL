@@ -549,10 +549,10 @@ MonoBehaviour:
   - {fileID: 2908893766607193993}
   - {fileID: 1571558707}
   - {fileID: 410859036}
-  - {fileID: 1391109216044239750}
+  - {fileID: 7981501786994619231}
   - {fileID: 1752420369}
   - {fileID: 8487515636540793923}
-  - {fileID: 4192143282512568895}
+  - {fileID: 9049741296760775602}
   Cam: {fileID: 1732185039}
   count: 0
 --- !u!4 &237090533
@@ -790,8 +790,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSpeed: 1
-  minScale: 1
-  maxScale: 2.1
+  minScale: 0.01
+  maxScale: 0.05
   minX: -2
   maxX: 2
   sensitivity: 5
@@ -1448,8 +1448,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSpeed: 1
-  minScale: 1
-  maxScale: 2.1
+  minScale: 0.05
+  maxScale: 0.15
   minX: -2
   maxX: 2
   sensitivity: 5
@@ -2756,7 +2756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f61b672c801a7449af15b3773b49e1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1243672116}
+  target: {fileID: 1186085970859761764}
   rotationSpeed: 5
   zoomSpeed: 10
   minScale: 5
@@ -2788,7 +2788,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.282, z: -2}
-  m_LocalScale: {x: 0.010000002, y: 0.01, z: 0.010000002}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1641474005}
@@ -2807,8 +2807,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSpeed: 1
-  minScale: 1
-  maxScale: 2.1
+  minScale: 0.02
+  maxScale: 0.2
   minX: -2
   maxX: 2
   sensitivity: 5
@@ -3843,7 +3843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomSpeed: 1
   minScale: 1
-  maxScale: 2.1
+  maxScale: 8
   minX: -2
   maxX: 2
   sensitivity: 5
@@ -3952,13 +3952,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7981501786994619231}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.040706385, y: -0.7059342, z: -0.70593405, w: 0.040706385}
+  m_LocalPosition: {x: -0.66, y: 0.4, z: -1.4}
+  m_LocalScale: {x: 0.01, y: 0.010000002, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1731043458734788924}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -173.4}
 --- !u!23 &1203882657716116884
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4172,23 +4172,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!1 &1391109216044239750
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1731043458734788924}
-  - component: {fileID: 1731043458734788925}
-  m_Layer: 0
-  m_Name: Silver_model
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
 --- !u!4 &1480320808261280412
 Transform:
   m_ObjectHideFlags: 0
@@ -4293,43 +4276,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!4 &1731043458734788924
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391109216044239750}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.49999928, y: -0.49999925, z: -0.5000008, w: 0.5000008}
-  m_LocalPosition: {x: -0.767, y: 0.727, z: -1.519}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1186085970859761764}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
---- !u!114 &1731043458734788925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391109216044239750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e0be5925e176cc4884a3893028b930b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zoomSpeed: 1
-  minScale: 1
-  maxScale: 2.1
-  minX: -2
-  maxX: 2
-  sensitivity: 5
-  smoothSpeed: 5
-  minPitch: -80
-  maxPitch: 80
 --- !u!33 &1743689494346179134
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4511,7 +4457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomSpeed: 1
   minScale: 1
-  maxScale: 2.1
+  maxScale: 8
   minX: -2
   maxX: 2
   sensitivity: 5
@@ -4640,7 +4586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomSpeed: 1
   minScale: 1
-  maxScale: 2.1
+  maxScale: 8
   minX: -2
   maxX: 2
   sensitivity: 5
@@ -4899,7 +4845,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000029653306}
   m_LocalPosition: {x: -0, y: 0.727, z: -2}
-  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 194562151465934275}
@@ -5158,8 +5104,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSpeed: 1
-  minScale: 1
-  maxScale: 2.1
+  minScale: 0.1
+  maxScale: 0.5
   minX: -2
   maxX: 2
   sensitivity: 5
@@ -5399,7 +5345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomSpeed: 1
   minScale: 1
-  maxScale: 2.1
+  maxScale: 8
   minX: -2
   maxX: 2
   sensitivity: 5
@@ -5907,7 +5853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomSpeed: 1
   minScale: 1
-  maxScale: 2.1
+  maxScale: 8
   minX: -2
   maxX: 2
   sensitivity: 5
@@ -7120,7 +7066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomSpeed: 1
   minScale: 1
-  maxScale: 2.1
+  maxScale: 8
   minX: -2
   maxX: 2
   sensitivity: 5
@@ -7715,7 +7661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomSpeed: 1
   minScale: 1
-  maxScale: 2.1
+  maxScale: 8
   minX: -2
   maxX: 2
   sensitivity: 5
@@ -8243,7 +8189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomSpeed: 1
   minScale: 1
-  maxScale: 2.1
+  maxScale: 8
   minX: -2
   maxX: 2
   sensitivity: 5
@@ -8314,13 +8260,35 @@ GameObject:
   - component: {fileID: 1186085970859761764}
   - component: {fileID: 4081103163447941422}
   - component: {fileID: 686596174742470074}
+  - component: {fileID: 7981501786994619232}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
+--- !u!114 &7981501786994619232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7981501786994619231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e0be5925e176cc4884a3893028b930b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomSpeed: 1
+  minScale: 0.01
+  maxScale: 2.1
+  minX: -2
+  maxX: 2
+  sensitivity: 5
+  smoothSpeed: 5
+  minPitch: -80
+  maxPitch: 80
 --- !u!23 &7982994211747775894
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8966,8 +8934,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomSpeed: 1
-  minScale: 1
-  maxScale: 2.1
+  minScale: 2
+  maxScale: 22
   minX: -2
   maxX: 2
   sensitivity: 5
@@ -9018,7 +8986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomSpeed: 1
   minScale: 1
-  maxScale: 2.1
+  maxScale: 8
   minX: -2
   maxX: 2
   sensitivity: 5
@@ -9056,7 +9024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomSpeed: 1
   minScale: 1
-  maxScale: 2.1
+  maxScale: 8
   minX: -2
   maxX: 2
   sensitivity: 5
@@ -9159,7 +9127,7 @@ SceneRoots:
   - {fileID: 9115960935841152761}
   - {fileID: 8564988252038871304}
   - {fileID: 2528111326577302835}
-  - {fileID: 1731043458734788924}
+  - {fileID: 1186085970859761764}
   - {fileID: 410859037}
   - {fileID: 1752420370}
   - {fileID: 1243672116}
